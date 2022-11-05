@@ -7,7 +7,6 @@ const onInputBlur = () => {
 
   // 3. Кидаємо клас invalid
   inputRef.classList.add("invalid");
-  console.log(inputRef);
 
   // 4. Перевіряємо валідність і за потреби змінємо клас на інпуті
   if (inputRef.value.length === Number(validValue)) {
