@@ -9,7 +9,7 @@ const refs = {
   spanRef: document.querySelector("#name-output"),
 };
 
-// 3. Додамо callback на опрацювання значення інпуту
+// 2. Додамо callback на опрацювання значення інпуту
 const handleInput = (event) => {
   const CHECK = "";
   refs.spanRef.textContent = event.currentTarget.value;
@@ -19,5 +19,5 @@ const handleInput = (event) => {
   }
 };
 
-// 4.Додамо слухача події на input
+// 3.Додамо слухача події на input
 refs.inputRef.addEventListener("input", handleInput);
