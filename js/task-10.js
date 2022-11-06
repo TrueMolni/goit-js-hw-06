@@ -44,10 +44,11 @@ const createBoxes = (amount) => {
   }
 };
 
-//4.  callback для видалення <div> з HTML та очищення значення інпуту
+//4.  callback для видалення <div> з HTML та очищення значення size ,інпуту
 const destroyBoxes = () => {
   refs.divRef.innerHTML = "";
   refs.inputRef.value = "";
+  size = 20;
 };
 
 //5. Додаємо слухачів подій на наші кнопки
