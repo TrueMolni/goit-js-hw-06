@@ -25,8 +25,7 @@ const onSubmitHandle = (event) => {
       password: password.value,
     };
   console.log(userData);
-  email.value = "";
-  password.value = "";
+  formRef.reset();
 };
 
 formRef.addEventListener("submit", onSubmitHandle);
