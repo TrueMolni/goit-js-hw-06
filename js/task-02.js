@@ -10,6 +10,7 @@ const ingredients = [
 const createIngridients = () => {
   //взяли посилання на ul
   const ulRef = document.querySelector("#ingredients");
+  const arr = [];
 
   //перебираємо ingredients через map
   ingredients.map((ingr) => {
@@ -19,9 +20,11 @@ const createIngridients = () => {
     item.classList.add("item");
     //додаємо йому текстовий зміст
     item.textContent = ingr;
-    // додаємо до списку <li>
-    ulRef.append(item);
+    // додаємо до масиву <li>
+    arr.push(item);
   });
+  //Розпилюємо масив і додаємо до списку за одну операцію
+  ulRef.append(...arr);
 };
 createIngridients();
 
